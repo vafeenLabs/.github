@@ -39,6 +39,8 @@ jobs:
           echo "" >> repo_list.md
           echo "## Repositories" >> repo_list.md
 
+          cat repo_list.md
+          
           # Обрабатываем каждый репозиторий
           while IFS= read -r repo; do
             git clone --depth=1 https://github.com/vafeenLabs/$repo temp_repo
