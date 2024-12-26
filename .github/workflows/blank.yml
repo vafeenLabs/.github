@@ -1,0 +1,60 @@
+name: Update Repositories List
+
+on:
+  schedule:
+    - cron: "0 0 * * *"  # Выполнять каждый день в полночь
+  workflow_dispatch:  # Позволяет запускать вручную
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: sudo apt-get install -y jq git
+
+      - name: Fetch repository list
+        id: fetch_repos
+        run: |
+          # Получаем список публичных репозиториев пользователя
+          curl -s https://api.github.com/users/vafeenLabs/repos | jq -r '.[] | select(.private == false) | .name' > repos.txt
+
+      - name: Generate repository list with header
+        run: |
+          # Добавляем текст в начало
+          echo "# by [Vafeen](https://github.com/vafeen)" > repo_list.md
+          echo "" >> repo_list.md
+          echo "This is a cemetery of my projects and labs that I have ever done, put my soul and time into them, and time is the most valuable thing we have. I believe that this will help more than one person, at least, save time and energy, and maybe it will help someone understand something. In general, welcome!" >> repo_list.md
+          echo "" >> repo_list.md
+          echo "![](vafeen.jpg)" >> repo_list.md
+          echo "" >> repo_list.md
+          echo "## Repositories" >> repo_list.md
+
+          # Обрабатываем каждый репозиторий
+          while IFS= read -r repo; do
+            git clone --depth=1 https://github.com/vafeenLabs/$repo temp_repo
+            if [ -f temp_repo/README.md ]; then
+              # Получаем первую строку без символа '#'
+              title=$(head -n 1 temp_repo/README.md | sed 's/^# //')
+              echo "- [$title](https://github.com/vafeenLabs/$repo)" >> repo_list.md
+            fi
+            rm -rf temp_repo
+          done < repos.txt
+
+      - name: Update README.md
+        run: |
+          # Заменяем содержимое README.md на новое
+          mv repo_list.md README.md
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.name "GitHub Actions Bot"
+          git config --local user.email "actions@github.com"
+          git add README.md
+          git commit -m "Update repository list with header"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
