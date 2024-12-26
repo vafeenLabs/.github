@@ -10,7 +10,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 - [Архитектуры современных микропроцессоров 5 семестр](https://github.com/vafeenLabs/architecture-of-modern-microprocessors_5-semester)
 - [Программирование на C# 5 семестр](https://github.com/vafeenLabs/c-sharp_5-semester)
 - [Windows 10 PRO activator ](https://github.com/vafeenLabs/cmd-win10-pro-activator)
-- [Компьютерные сети](https://github.com/vafeenLabs/computer-networks_5-semester)
+- [Компьютерные сети 5 семестр](https://github.com/vafeenLabs/computer-networks_5-semester)
 - [Курсовая работа по предмету Информатика и программирование](https://github.com/vafeenLabs/computer-science-and-programming_2-semester)
 - [Структуры данных и алгоритмы 3 и 4 семестр](https://github.com/vafeenLabs/data-structures-and-algorithms_3-4-semester)
 - [Базы данных 4 и 5 семестр](https://github.com/vafeenLabs/db-5_semester)
