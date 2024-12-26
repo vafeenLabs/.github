@@ -25,8 +25,28 @@ jobs:
       - name: Fetch repository list
         id: fetch_repos
         run: |
-          # Получаем список публичных репозиториев пользователя
-          curl -s https://api.github.com/users/vafeenLabs/repos | jq -r '.[] | select(.private == false) | .name' > repos.txt
+          # Инициализируем пустой массив для репозиториев
+          all_repos=()
+          page=1
+
+          while true; do
+            # Получаем репозитории для текущей страницы
+            repos=$(curl -s "https://api.github.com/users/vafeenLabs/repos?page=$page&per_page=100" | jq -r '.[] | select(.private == false) | .name')
+
+            # Если репозиториев больше нет, выходим из цикла
+            if [[ -z "$repos" ]]; then
+              break
+            fi
+
+            # Добавляем репозитории в массив
+            all_repos+=($repos)
+
+            # Переходим к следующей странице
+            ((page++))
+          done
+
+          # Сохраняем список в файл
+          printf "%s\n" "${all_repos[@]}" > repos.txt
 
       - name: Generate repository list with header
         run: |
