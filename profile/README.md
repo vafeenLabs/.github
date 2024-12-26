@@ -8,7 +8,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 - [Пакеты прикладных программ 2 семестр](https://github.com/vafeenLabs/application-software-packages_2-semester)
 - [Архитектуры вычислительных систем 4 семестр](https://github.com/vafeenLabs/architecture-of-computing-systems_4-semester)
 - [Архитектуры современных микропроцессоров 5 семестр](https://github.com/vafeenLabs/architecture-of-modern-microprocessors_5-semester)
-- [Программирование на C#](https://github.com/vafeenLabs/c-sharp_5-semester)
+- [Программирование на C# 5 семестр](https://github.com/vafeenLabs/c-sharp_5-semester)
 - [Windows 10 PRO activator ](https://github.com/vafeenLabs/cmd-win10-pro-activator)
 - [Компьютерные сети](https://github.com/vafeenLabs/computer-networks_5-semester)
 - [Курсовая работа по предмету Информатика и программирование](https://github.com/vafeenLabs/computer-science-and-programming_2-semester)
