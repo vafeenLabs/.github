@@ -40,7 +40,7 @@ jobs:
           echo "## Repositories" >> repo_list.md
 
           cat repo_list.md
-          
+
           # Обрабатываем каждый репозиторий
           while IFS= read -r repo; do
             git clone --depth=1 https://github.com/vafeenLabs/$repo temp_repo
@@ -52,16 +52,16 @@ jobs:
             rm -rf temp_repo
           done < repos.txt
 
-      - name: Update README.md
+      - name: Update profile/README.md
         run: |
           # Заменяем содержимое README.md на новое
-          mv repo_list.md README.md
+          mv repo_list.md profile/README.md
 
       - name: Commit and push changes
         run: |
           git config --local user.name "GitHub Actions Bot"
           git config --local user.email "actions@github.com"
-          git add README.md
+          git add profile/README.md
           git commit -m "Update repository list with header"
           git push
         env:
