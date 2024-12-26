@@ -2,8 +2,11 @@ name: Update Repositories List
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Выполнять каждый день в полночь
-  workflow_dispatch: # Позволяет запускать вручную
+    - cron: "0 0 * * *"  # Выполнять каждый день в полночь
+  workflow_dispatch:  # Позволяет запускать вручную
+  push:
+    tags:
+      - 'v*'  # Запускаем workflow только при пуше тегов, начинающихся на "v"
 
 jobs:
   update-readme:
