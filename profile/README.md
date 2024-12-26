@@ -20,3 +20,5 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 - [Математические основы компьютерной графики 5 семестр](https://github.com/vafeenLabs/mathematical_foundations_of_computer_graphics_5_semester)
 - [Объектно-ориентированное программирование 3 семестр](https://github.com/vafeenLabs/OOP_3-semester)
 - [Операционные системы 4 семестр](https://github.com/vafeenLabs/OS_4-semester)
+- [Параллельное программирование 5 семестр](https://github.com/vafeenLabs/parallel-programming_5-semester)
+- [Программирование на python](https://github.com/vafeenLabs/python_5-semester)
