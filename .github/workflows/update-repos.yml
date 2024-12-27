@@ -77,6 +77,13 @@ jobs:
           # Заменяем содержимое README.md на новое
           mv repo_list.md profile/README.md
 
+      - name: Check for changes
+        run: |
+          if git diff --quiet; then
+            echo "No changes detected. Skipping commit and push."
+            exit 0
+          fi
+
       - name: Commit and push changes
         run: |
           git config --local user.name "GitHub Actions Bot"
