@@ -79,17 +79,14 @@ jobs:
 
       - name: Check for changes
         run: |
-          if git diff --quiet; then
-            echo "No changes detected. Skipping commit and push."
-            exit 0
+          if git diff --quiet; 
+            then  echo "No changes detected. Skipping commit and push."
+          else 
+            git config --local user.name "GitHub Actions Bot"
+            git config --local user.email "actions@github.com"
+            git add profile/README.md
+            git commit -m "Update repository list with header"
+            git push
           fi
-
-      - name: Commit and push changes
-        run: |
-          git config --local user.name "GitHub Actions Bot"
-          git config --local user.email "actions@github.com"
-          git add profile/README.md
-          git commit -m "Update repository list with header"
-          git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
