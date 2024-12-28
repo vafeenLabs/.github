@@ -19,6 +19,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 - [Практическое задание на стажировке SURF 2024](https://github.com/vafeenLabs/internship-2-course-surf)
 - [Project for task: to make a program with using knowledge Discrete Math such as Graphs and some algorithms](https://github.com/vafeenLabs/javascript-moscow-travel-guide)
 - [Математические основы компьютерной графики 5 семестр](https://github.com/vafeenLabs/mathematical_foundations_of_computer_graphics_5_semester)
+- [Численные методы 5 семестр](https://github.com/vafeenLabs/numerical-methods_5-semester)
 - [Объектно-ориентированное программирование 3 семестр](https://github.com/vafeenLabs/OOP_3-semester)
 - [Операционные системы 4 семестр](https://github.com/vafeenLabs/OS_4-semester)
 - [Параллельное программирование 5 семестр](https://github.com/vafeenLabs/parallel-programming_5-semester)
