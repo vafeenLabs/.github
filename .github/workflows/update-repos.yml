@@ -50,8 +50,11 @@ jobs:
 
       - name: Generate repository list with header
         run: |
+          # Устанавливаем часовой пояс MSK
+          export TZ=Europe/Moscow
+
           # Получаем текущую дату и время
-          datetime=$(date "+%d.%m.%y %H:%M:%S")
+          datetime=$(date "+%d.%m.%y %H:%M:%S MSK")
 
           # Добавляем текст в начало
           echo "# by [Vafeen](https://github.com/vafeen)" > repo_list.md
