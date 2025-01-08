@@ -50,6 +50,9 @@ jobs:
 
       - name: Generate repository list with header
         run: |
+          # Получаем текущую дату и время
+          datetime=$(date "+%d.%m.%y %H:%M:%S")
+
           # Добавляем текст в начало
           echo "# by [Vafeen](https://github.com/vafeen)" > repo_list.md
           echo "" >> repo_list.md
@@ -57,7 +60,7 @@ jobs:
           echo "" >> repo_list.md
           echo "![](vafeen.jpg)" >> repo_list.md
           echo "" >> repo_list.md
-          echo "## Repositories" >> repo_list.md
+          echo "## Repositories (UPD $datetime)" >> repo_list.md
 
           cat repo_list.md
 
