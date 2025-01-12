@@ -4,7 +4,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-## Repositories (UPD 11.01.25 04:43:32 MSK)
+## Repositories (UPD 12.01.25 04:52:02 MSK)
 - [Пакеты прикладных программ 2 семестр](https://github.com/vafeenLabs/application-software-packages_2-semester)
 - [Архитектуры вычислительных систем 4 семестр](https://github.com/vafeenLabs/architecture-of-computing-systems_4-semester)
 - [Архитектуры современных микропроцессоров 5 семестр](https://github.com/vafeenLabs/architecture-of-modern-microprocessors_5-semester)
@@ -20,6 +20,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 - [Практическое задание на стажировке SURF 2024](https://github.com/vafeenLabs/internship-2-course-surf)
 - [Project for task: to make a program with using knowledge Discrete Math such as Graphs and some algorithms](https://github.com/vafeenLabs/javascript-moscow-travel-guide)
 - [Математические основы компьютерной графики 5 семестр](https://github.com/vafeenLabs/mathematical_foundations_of_computer_graphics_5_semester)
+- [Mobile device architecture projects](https://github.com/vafeenLabs/mobile-device-architectures_5-semester)
 - [Численные методы 5 семестр](https://github.com/vafeenLabs/numerical-methods_5-semester)
 - [Объектно-ориентированное программирование 3 семестр](https://github.com/vafeenLabs/OOP_3-semester)
 - [Операционные системы 4 семестр](https://github.com/vafeenLabs/OS_4-semester)
