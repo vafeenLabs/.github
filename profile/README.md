@@ -1,10 +1,10 @@
-# by [Vafeen](https://github.com/vafeen)
+# by [Vafeen](https://github.com/vafeen) ![Profile Views](https://komarev.com/ghpvc/?username=vafeenLabs&label=Profile%20views&color=0e75b6&style=flat)
 
 This is a cemetery of my projects and labs that I have ever done, put my soul and time into them, and time is the most valuable thing we have. I believe that this will help more than one person, at least, save time and energy, and maybe it will help someone understand something. In general, welcome!
 
 ![](vafeen.jpg)
 
-## Repositories (UPD 14.01.25 04:39:03 MSK)
+## Repositories (UPD 15.01.25 01:05:27 MSK)
 - [Пакеты прикладных программ 2 семестр](https://github.com/vafeenLabs/application-software-packages_2-semester)
 - [Архитектуры вычислительных систем 4 семестр](https://github.com/vafeenLabs/architecture-of-computing-systems_4-semester)
 - [Архитектуры современных микропроцессоров 5 семестр](https://github.com/vafeenLabs/architecture-of-modern-microprocessors_5-semester)
