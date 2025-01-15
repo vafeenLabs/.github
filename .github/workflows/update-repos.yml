@@ -78,14 +78,11 @@ jobs:
               # Получаем первую строку без символа '#'
               title=$(head -n 1 $repo/README.md | sed 's/^# //')
               echo "$i. [$title](https://github.com/vafeenLabs/$repo)" >> repo_list.md
-            else
-              echo "$i. [$repo](https://github.com/vafeenLabs/$repo)" >> repo_list.md
+              ((i++))
             fi
             
             # Удаляем директорию после обработки
             rm -rf $repo
-            
-            ((i++))
           done < repos.txt
 
       - name: Update profile/README.md
