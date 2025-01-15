@@ -65,12 +65,15 @@ jobs:
           echo "" >> repo_list.md
           echo "## Repositories (UPD $datetime)" >> repo_list.md
 
-          cat repo_list.md
-
           # Обрабатываем каждый репозиторий
           i=1
           while IFS= read -r repo; do
+            # Удаляем существующую директорию, если она есть
+            rm -rf $repo
+            
+            # Клонируем репозиторий в директорию с именем репозитория
             git clone --depth=1 https://github.com/vafeenLabs/$repo $repo
+            
             if [ -f $repo/README.md ]; then
               # Получаем первую строку без символа '#'
               title=$(head -n 1 $repo/README.md | sed 's/^# //')
@@ -78,7 +81,10 @@ jobs:
             else
               echo "$i. [$repo](https://github.com/vafeenLabs/$repo)" >> repo_list.md
             fi
+            
+            # Удаляем директорию после обработки
             rm -rf $repo
+            
             ((i++))
           done < repos.txt
 
