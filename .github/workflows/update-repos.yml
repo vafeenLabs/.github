@@ -69,13 +69,13 @@ jobs:
 
           # Обрабатываем каждый репозиторий
           while IFS= read -r repo; do
-            git clone --depth=1 https://github.com/vafeenLabs/$repo temp_repo
-            if [ -f temp_repo/README.md ]; then
+            git clone --depth=1 https://github.com/vafeenLabs/$repo
+            if [ -f repo/README.md ]; then
               # Получаем первую строку без символа '#'
-              title=$(head -n 1 temp_repo/README.md | sed 's/^# //')
+              title=$(head -n 1 repo/README.md | sed 's/^# //')
               echo "- [$title](https://github.com/vafeenLabs/$repo)" >> repo_list.md
             fi
-            rm -rf temp_repo
+            rm -rf repo
           done < repos.txt
 
       - name: Update profile/README.md
