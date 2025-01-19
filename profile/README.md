@@ -4,7 +4,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-## Repositories (UPD 18.01.25 04:37:26 MSK)
+## Repositories (UPD 19.01.25 04:46:47 MSK)
 1. [Пакеты прикладных программ 2 семестр](https://github.com/vafeenLabs/application-software-packages_2-semester)
 2. [Архитектуры вычислительных систем 4 семестр](https://github.com/vafeenLabs/architecture-of-computing-systems_4-semester)
 3. [Архитектуры современных микропроцессоров 5 семестр](https://github.com/vafeenLabs/architecture-of-modern-microprocessors_5-semester)
