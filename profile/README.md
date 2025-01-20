@@ -4,7 +4,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-## Repositories (UPD 19.01.25 04:46:47 MSK)
+## Repositories (UPD 20.01.25 04:42:20 MSK)
 1. [Пакеты прикладных программ 2 семестр](https://github.com/vafeenLabs/application-software-packages_2-semester)
 2. [Архитектуры вычислительных систем 4 семестр](https://github.com/vafeenLabs/architecture-of-computing-systems_4-semester)
 3. [Архитектуры современных микропроцессоров 5 семестр](https://github.com/vafeenLabs/architecture-of-modern-microprocessors_5-semester)
@@ -20,8 +20,9 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 13. [Практическое задание на стажировке SURF 2024](https://github.com/vafeenLabs/internship-2-course-surf)
 14. [Математические основы компьютерной графики 5 семестр](https://github.com/vafeenLabs/mathematical_foundations_of_computer_graphics_5_semester)
 15. [Архитектуры мобильных систем 5 семестр](https://github.com/vafeenLabs/mobile-device-architectures_5-semester)
-16. [Численные методы 5 семестр](https://github.com/vafeenLabs/numerical-methods_5-semester)
-17. [Объектно-ориентированное программирование 3 семестр](https://github.com/vafeenLabs/OOP_3-semester)
-18. [Операционные системы 4 семестр](https://github.com/vafeenLabs/OS_4-semester)
-19. [Параллельное программирование 5 семестр](https://github.com/vafeenLabs/parallel-programming_5-semester)
-20. [Программирование на python 5 семестр](https://github.com/vafeenLabs/python_5-semester)
+16. [Niapoll's phrases as the meaning of life app](https://github.com/vafeenLabs/niapolls-phrases-as-the-meaning-of-life)
+17. [Численные методы 5 семестр](https://github.com/vafeenLabs/numerical-methods_5-semester)
+18. [Объектно-ориентированное программирование 3 семестр](https://github.com/vafeenLabs/OOP_3-semester)
+19. [Операционные системы 4 семестр](https://github.com/vafeenLabs/OS_4-semester)
+20. [Параллельное программирование 5 семестр](https://github.com/vafeenLabs/parallel-programming_5-semester)
+21. [Программирование на python 5 семестр](https://github.com/vafeenLabs/python_5-semester)
