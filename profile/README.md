@@ -4,7 +4,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-## Repositories (UPD 20.01.25 04:42:20 MSK)
+## Repositories (UPD 21.01.25 04:40:27 MSK)
 1. [Пакеты прикладных программ 2 семестр](https://github.com/vafeenLabs/application-software-packages_2-semester)
 2. [Архитектуры вычислительных систем 4 семестр](https://github.com/vafeenLabs/architecture-of-computing-systems_4-semester)
 3. [Архитектуры современных микропроцессоров 5 семестр](https://github.com/vafeenLabs/architecture-of-modern-microprocessors_5-semester)
@@ -12,7 +12,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 5. [Windows 10 PRO activator ](https://github.com/vafeenLabs/cmd-win10-pro-activator)
 6. [Компьютерные сети 5 семестр](https://github.com/vafeenLabs/computer-networks_5-semester)
 7. [Информатика и программирование 2 семестр: Курсовая](https://github.com/vafeenLabs/computer-science-and-programming_2-semester)
-8. [Курсовая работа 6 семестр](https://github.com/vafeenLabs/Coursework_6-semester)
+8. [Coursework 6 semester](https://github.com/vafeenLabs/Coursework_6-semester)
 9. [Структуры данных и алгоритмы 3 и 4 семестр](https://github.com/vafeenLabs/data-structures-and-algorithms_3-4-semester)
 10. [Базы данных 4 и 5 семестр](https://github.com/vafeenLabs/db-5_semester)
 11. [Экономика 3 семестр](https://github.com/vafeenLabs/economy-presentation_3-semester)
