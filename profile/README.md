@@ -4,7 +4,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-## Repositories (UPD 02.03.25 04:51:15 MSK)
+## Repositories (UPD 03.03.25 04:48:57 MSK)
 1. [Пакеты прикладных программ 2 семестр](https://github.com/vafeenLabs/application-software-packages_2-semester)
 2. [Архитектуры вычислительных систем 4 семестр](https://github.com/vafeenLabs/architecture-of-computing-systems_4-semester)
 3. [Архитектуры современных микропроцессоров 5 семестр](https://github.com/vafeenLabs/architecture-of-modern-microprocessors_5-semester)
@@ -19,7 +19,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 12. [Reading log по Английскому 4 семестр](https://github.com/vafeenLabs/english-reading-log)
 13. [Практическое задание на стажировке SURF 2024](https://github.com/vafeenLabs/internship-2-course-surf)
 14. [Математические основы компьютерной графики 5 семестр](https://github.com/vafeenLabs/mathematical_foundations_of_computer_graphics_5_semester)
-15. [Activated Microsoft-Office-LTS-Professional-Plus-2021](https://github.com/vafeenLabs/Microsoft-Office-LTS-Professional-Plus-2021)
+15. [Microsoft-Office-LTS-Professional-Plus-2021 ](https://github.com/vafeenLabs/Microsoft-Office-LTS-Professional-Plus-2021)
 16. [Архитектуры мобильных систем 5 семестр](https://github.com/vafeenLabs/mobile-device-architectures_5-semester)
 17. [Niapoll's phrases as the meaning of life app](https://github.com/vafeenLabs/niapolls-phrases-as-the-meaning-of-life)
 18. [Численные методы 5 семестр](https://github.com/vafeenLabs/numerical-methods_5-semester)
