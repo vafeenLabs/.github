@@ -4,7 +4,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-## Repositories (UPD 13.03.25 04:49:14 MSK)
+## Repositories (UPD 14.03.25 04:47:15 MSK)
 1. [Пакеты прикладных программ 2 семестр](https://github.com/vafeenLabs/application-software-packages_2-semester)
 2. [Архитектуры вычислительных систем 4 семестр](https://github.com/vafeenLabs/architecture-of-computing-systems_4-semester)
 3. [Архитектуры современных микропроцессоров 5 семестр](https://github.com/vafeenLabs/architecture-of-modern-microprocessors_5-semester)
@@ -23,7 +23,8 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 16. [Архитектуры мобильных систем 5 семестр](https://github.com/vafeenLabs/mobile-device-architectures_5-semester)
 17. [Niapoll's phrases as the meaning of life app](https://github.com/vafeenLabs/niapolls-phrases-as-the-meaning-of-life)
 18. [Численные методы 5 семестр](https://github.com/vafeenLabs/numerical-methods_5-semester)
-19. [Объектно-ориентированное программирование 3 семестр](https://github.com/vafeenLabs/OOP_3-semester)
-20. [Операционные системы 4 семестр](https://github.com/vafeenLabs/OS_4-semester)
-21. [Параллельное программирование 5 семестр](https://github.com/vafeenLabs/parallel-programming_5-semester)
-22. [Программирование на python 5 семестр](https://github.com/vafeenLabs/python_5-semester)
+19. [Объектно-ориентированный анализ и проектирование 6 семестр](https://github.com/vafeenLabs/object-oriented-analysis-and-design_6-semester)
+20. [Объектно-ориентированное программирование 3 семестр](https://github.com/vafeenLabs/OOP_3-semester)
+21. [Операционные системы 4 семестр](https://github.com/vafeenLabs/OS_4-semester)
+22. [Параллельное программирование 5 семестр](https://github.com/vafeenLabs/parallel-programming_5-semester)
+23. [Программирование на python 5 семестр](https://github.com/vafeenLabs/python_5-semester)
