@@ -4,7 +4,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-## Repositories (UPD 23.03.25 02:54:51 MSK)
+## Repositories (UPD 23.03.25 02:58:05 MSK)
 
 #### 1mag semester
 - [test 1mag semester](https://github.com/vafeenLabs/test_1mag-semester)
@@ -46,6 +46,9 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 - [Курсовая работа 6 семестр](https://github.com/vafeenLabs/Coursework_6-semester)
 - [Объектно-ориентированный анализ и проектирование 6 семестр](https://github.com/vafeenLabs/object-oriented-analysis-and-design_6-semester)
 - [Отчет по курсовой работе 6 семестр](https://github.com/vafeenLabs/coursework-report_6-semester)
+
+####  semester
+- [](https://github.com/vafeenLabs/)
 
 ### Other Repositories
 - [Windows 10 PRO activator ](https://github.com/vafeenLabs/cmd-win10-pro-activator)
