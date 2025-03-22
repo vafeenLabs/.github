@@ -4,7 +4,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-## Repositories (UPD 23.03.25 02:10:07 MSK)
+## Repositories (UPD 23.03.25 02:11:29 MSK)
 ### Semesters
 
 #### Semester 2
@@ -39,6 +39,6 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 - [Windows 10 PRO activator ](https://github.com/vafeenLabs/cmd-win10-pro-activator)
 - [Базы данных 4 и 5 семестр](https://github.com/vafeenLabs/db-5_semester)
 - [Практическое задание на стажировке SURF 2024](https://github.com/vafeenLabs/internship-2-course-surf)
-- [Математические основы компьютерной графики 5 семестр](https://github.com/vafeenLabs/mathematical_foundations_of_computer_graphics_5_semester)
+- [Математические основы компьютерной графики 5 семестр](https://github.com/vafeenLabs/mathematical_foundations_of_computer_graphics-5_semester)
 - [Microsoft-Office-LTS-Professional-Plus-2021 ](https://github.com/vafeenLabs/Microsoft-Office-LTS-Professional-Plus-2021)
 - [Niapoll's phrases as the meaning of life app](https://github.com/vafeenLabs/niapolls-phrases-as-the-meaning-of-life)
