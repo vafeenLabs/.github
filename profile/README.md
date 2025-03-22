@@ -4,7 +4,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-## Repositories (UPD 23.03.25 02:14:07 MSK)
+## Repositories (UPD 23.03.25 02:16:59 MSK)
 ### Semesters
 
 #### Semester 2
@@ -24,7 +24,9 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 #### Semester 5
 - [Архитектуры мобильных систем 5 семестр](https://github.com/vafeenLabs/mobile-device-architectures_5-semester)
 - [Архитектуры современных микропроцессоров 5 семестр](https://github.com/vafeenLabs/architecture-of-modern-microprocessors_5-semester)
+- [Базы данных 4 и 5 семестр](https://github.com/vafeenLabs/db_5-semester)
 - [Компьютерные сети 5 семестр](https://github.com/vafeenLabs/computer-networks_5-semester)
+- [Математические основы компьютерной графики 5 семестр](https://github.com/vafeenLabs/mathematical-foundations-of-computer-graphics_5-semester)
 - [Параллельное программирование 5 семестр](https://github.com/vafeenLabs/parallel-programming_5-semester)
 - [Программирование на C# 5 семестр](https://github.com/vafeenLabs/c-sharp_5-semester)
 - [Программирование на python 5 семестр](https://github.com/vafeenLabs/python_5-semester)
@@ -37,8 +39,6 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ### Other Repositories
 - [Windows 10 PRO activator ](https://github.com/vafeenLabs/cmd-win10-pro-activator)
-- [Базы данных 4 и 5 семестр](https://github.com/vafeenLabs/db-5_semester)
 - [Практическое задание на стажировке SURF 2024](https://github.com/vafeenLabs/internship-2-course-surf)
-- [Математические основы компьютерной графики 5 семестр](https://github.com/vafeenLabs/mathematical_foundations_of_computer_graphics-5_semester)
 - [Microsoft-Office-LTS-Professional-Plus-2021 ](https://github.com/vafeenLabs/Microsoft-Office-LTS-Professional-Plus-2021)
 - [Niapoll's phrases as the meaning of life app](https://github.com/vafeenLabs/niapolls-phrases-as-the-meaning-of-life)
