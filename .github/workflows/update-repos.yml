@@ -65,24 +65,55 @@ jobs:
           echo "" >> repo_list.md
           echo "## Repositories (UPD $datetime)" >> repo_list.md
 
-          # Обрабатываем каждый репозиторий
-          i=1
+          # Обрабатываем репозитории с приставкой _X-semester
+          echo "### Semesters" >> repo_list.md
+
+          # Создаем временный файл для хранения данных о семестрах
+          temp_file=$(mktemp)
+
           while IFS= read -r repo; do
-            # Удаляем существующую директорию, если она есть
-            rm -rf $repo
-            
-            # Клонируем репозиторий в директорию с именем репозитория
-            git clone --depth=1 https://github.com/vafeenLabs/$repo $repo
-            
-            if [ -f $repo/README.md ]; then
-              # Получаем первую строку без символа '#'
-              title=$(head -n 1 $repo/README.md | sed 's/^# //')
-              echo "$i. [$title](https://github.com/vafeenLabs/$repo)" >> repo_list.md
-              ((i++))
+            if [[ "$repo" == *"_"*"-semester" ]]; then
+              # Извлекаем номер семестра
+              semester_number=$(echo "$repo" | grep -oP '(?<=_)\d+(?=-semester)')
+              # Клонируем репозиторий
+              rm -rf $repo
+              git clone --depth=1 https://github.com/vafeenLabs/$repo $repo
+              if [ -f $repo/README.md ]; then
+                # Получаем первую строку без символа '#'
+                title=$(head -n 1 $repo/README.md | sed 's/^# //')
+                # Записываем данные во временный файл
+                echo "$semester_number|$title|$repo" >> $temp_file
+              fi
+              # Удаляем директорию после обработки
+              rm -rf $repo
             fi
-            
-            # Удаляем директорию после обработки
-            rm -rf $repo
+          done < repos.txt
+
+          # Сортируем временный файл по номеру семестра и названию
+          sort -t'|' -k1,1n -k2,2 $temp_file | while IFS='|' read -r semester title repo; do
+            echo "- **Semester $semester**: [$title](https://github.com/vafeenLabs/$repo)" >> repo_list.md
+          done
+
+          # Удаляем временный файл
+          rm -f $temp_file
+
+          # Обрабатываем остальные репозитории
+          echo "" >> repo_list.md
+          echo "### Other Repositories" >> repo_list.md
+
+          while IFS= read -r repo; do
+            if [[ "$repo" != *"_"*"-semester" ]]; then
+              # Клонируем репозиторий
+              rm -rf $repo
+              git clone --depth=1 https://github.com/vafeenLabs/$repo $repo
+              if [ -f $repo/README.md ]; then
+                # Получаем первую строку без символа '#'
+                title=$(head -n 1 $repo/README.md | sed 's/^# //')
+                echo "- [$title](https://github.com/vafeenLabs/$repo)" >> repo_list.md
+              fi
+              # Удаляем директорию после обработки
+              rm -rf $repo
+            fi
           done < repos.txt
 
       - name: Update profile/README.md
