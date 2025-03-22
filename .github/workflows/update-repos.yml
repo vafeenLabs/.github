@@ -87,7 +87,7 @@ jobs:
                   title=$(head -n 1 $repo/README.md | sed 's/^# //')
                   # Записываем данные для каждого семестра
                   for semester in $semester_numbers; do
-                    echo "$semester|$title ($semester семестр)|$repo" >> $temp_file
+                    echo "$semester|$title|$repo" >> $temp_file
                   done
                 else
                   echo "Skipping $repo: README.md not found"
