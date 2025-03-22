@@ -74,16 +74,18 @@ jobs:
           while IFS= read -r repo; do
             if [[ "$repo" == *"_"*"-semester" ]]; then
               echo "Processing repository: $repo"
-              # Извлекаем номер семестра
-              semester_number=$(echo "$repo" | grep -oP '(?<=_)\d+(?=-semester)')
+              # Извлекаем все номера семестров
+              semester_numbers=$(echo "$repo" | grep -oP '(?<=_)\d+(?=-semester)')
               # Клонируем репозиторий
               rm -rf $repo
               if git clone --depth=1 https://github.com/vafeenLabs/$repo $repo; then
                 if [ -f "$repo/README.md" ]; then
                   # Получаем первую строку без символа '#'
                   title=$(head -n 1 $repo/README.md | sed 's/^# //')
-                  # Записываем данные во временный файл
-                  echo "$semester_number|$title|$repo" >> $temp_file
+                  # Записываем данные для каждого семестра
+                  for semester in $semester_numbers; do
+                    echo "$semester|$title|$repo" >> $temp_file
+                  done
                 else
                   echo "Skipping $repo: README.md not found"
                 fi
@@ -97,7 +99,13 @@ jobs:
 
           # Сортируем временный файл по номеру семестра и названию
           sort -t'|' -k1,1n -k2,2 $temp_file | while IFS='|' read -r semester title repo; do
-            echo "- **Semester $semester**: [$title](https://github.com/vafeenLabs/$repo)" >> repo_list.md
+            # Проверяем, является ли это первым упоминанием семестра
+            if [[ "$semester" != "$last_semester" ]]; then
+              echo "" >> repo_list.md
+              echo "#### Semester $semester" >> repo_list.md
+              last_semester=$semester
+            fi
+            echo "- [$title](https://github.com/vafeenLabs/$repo)" >> repo_list.md
           done
 
           # Удаляем временный файл
