@@ -50,66 +50,76 @@ jobs:
 
       - name: Generate repository list with header
         run: |
-          set -e
-          set -x
+          set -e  # Прерывать выполнение при ошибке
+          set -x  # Включить отладочный вывод
 
+          # Устанавливаем часовой пояс MSK
           export TZ=Europe/Moscow
+
+          # Получаем текущую дату и время
           datetime=$(date "+%d.%m.%y %H:%M:%S MSK")
 
-          # Создаем заголовок
+          # Добавляем текст в начало
           echo "# by [Vafeen](https://github.com/vafeen) ![Profile Views](https://komarev.com/ghpvc/?username=vafeenLabs&label=Profile%20views&color=0e75b6&style=flat)" > repo_list.md
-          echo -e "\nThis is a cemetery of my projects and labs that I have ever done, put my soul and time into them, and time is the most valuable thing we have. I believe that this will help more than one person, at least, save time and energy, and maybe it will help someone understand something. In general, welcome!" >> repo_list.md
+          echo "" >> repo_list.md
+          echo "This is a cemetery of my projects and labs that I have ever done, put my soul and time into them, and time is the most valuable thing we have. I believe that this will help more than one person, at least, save time and energy, and maybe it will help someone understand something. In general, welcome!" >> repo_list.md
           echo "" >> repo_list.md
           echo "![](vafeen.jpg)" >> repo_list.md
           echo "" >> repo_list.md
           echo "## Repositories (UPD $datetime)" >> repo_list.md
 
-          # Обработка семестров
+          # Обрабатываем репозитории с приставкой _X-semester
           echo "### Semesters" >> repo_list.md
+
+          # Создаем временный файл для хранения данных о семестрах
           temp_file=$(mktemp)
 
           while IFS= read -r repo; do
-            if [[ "$repo" == *"-semester" ]]; then
+            if [[ "$repo" == *"_"*"-semester" ]]; then
               echo "Processing repository: $repo"
-              # Извлекаем ВСЕ номера семестров через дефис
-              semester_numbers=$(echo "$repo" | grep -oP '\d+(?=-semester)' | tr '\n' ' ')
-              
-              # Клонируем и получаем название
+              # Извлекаем все номера семестров
+              semester_numbers=$(echo "$repo" | grep -oP '\d+(?=-semester)')
+              # Клонируем репозиторий
               rm -rf $repo
               if git clone --depth=1 https://github.com/vafeenLabs/$repo $repo; then
                 if [ -f "$repo/README.md" ]; then
+                  # Получаем первую строку без символа '#'
                   title=$(head -n 1 $repo/README.md | sed 's/^# //')
-                  # Записываем для КАЖДОГО семестра отдельно
+                  # Записываем данные для каждого семестра
                   for semester in $semester_numbers; do
                     echo "$semester|$title|$repo" >> $temp_file
                   done
+                else
+                  echo "Skipping $repo: README.md not found"
                 fi
+              else
+                echo "Failed to clone $repo"
               fi
+              # Удаляем директорию после обработки
               rm -rf $repo
             fi
           done < repos.txt
 
-          # Сортировка и группировка по семестрам
-          current_semester=""
+          # Сортируем временный файл по номеру семестра и названию
           sort -t'|' -k1,1n -k2,2 $temp_file | while IFS='|' read -r semester title repo; do
-            if [[ "$semester" != "$current_semester" ]]; then
-              echo -e "\n#### Semester $semester" >> repo_list.md
-              current_semester=$semester
+            # Проверяем, является ли это первым упоминанием семестра
+            if [[ "$semester" != "$last_semester" ]]; then
+              echo "" >> repo_list.md
+              echo "#### Semester $semester" >> repo_list.md
+              last_semester=$semester
             fi
-            # Проверяем дубликаты перед добавлением
-            if ! grep -q "\[$title\]" repo_list.md; then
-              echo "- [$title](https://github.com/vafeenLabs/$repo)" >> repo_list.md
-            fi
+            echo "- [$title](https://github.com/vafeenLabs/$repo)" >> repo_list.md
           done
 
+          # Удаляем временный файл
           rm -f $temp_file
 
-          # Обработка остальных репозиториев
+          # Обрабатываем остальные репозитории
           echo "" >> repo_list.md
           echo "### Other Repositories" >> repo_list.md
 
           while IFS= read -r repo; do
-            if [[ "$repo" != *"-semester" ]]; then
+            if [[ "$repo" != *"_"*"-semester" ]]; then
               echo "Processing repository: $repo"
               # Клонируем репозиторий
               rm -rf $repo
