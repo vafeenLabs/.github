@@ -69,8 +69,6 @@ jobs:
           echo "## Repositories (UPD $datetime)" >> repo_list.md
 
           # Обрабатываем репозитории, содержащие -semester
-          echo "### Semesters" >> repo_list.md
-
           # Создаем временный файл для хранения данных о семестрах
           temp_file=$(mktemp)
 
@@ -105,7 +103,7 @@ jobs:
             # Проверяем, является ли это первым упоминанием семестра
             if [[ "$semester" != "$last_semester" ]]; then
               echo "" >> repo_list.md
-              echo "#### Semester $semester" >> repo_list.md
+              echo "#### $semester semester" >> repo_list.md
               last_semester=$semester
             fi
             echo "- [$title](https://github.com/vafeenLabs/$repo)" >> repo_list.md
