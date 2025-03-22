@@ -50,6 +50,9 @@ jobs:
 
       - name: Generate repository list with header
         run: |
+          set -e  # Прерывать выполнение при ошибке
+          set -x  # Включить отладочный вывод
+
           # Устанавливаем часовой пояс MSK
           export TZ=Europe/Moscow
 
