@@ -68,14 +68,14 @@ jobs:
           echo "" >> repo_list.md
           echo "## Repositories (UPD $datetime)" >> repo_list.md
 
-          # Обрабатываем репозитории с приставкой _X-semester
+          # Обрабатываем репозитории, заканчивающиеся на -semester
           echo "### Semesters" >> repo_list.md
 
           # Создаем временный файл для хранения данных о семестрах
           temp_file=$(mktemp)
 
           while IFS= read -r repo; do
-            if [[ "$repo" == *"_"*"-semester" ]]; then
+            if [[ "$repo" == *"-semester" ]]; then
               echo "Processing repository: $repo"
               # Извлекаем все номера семестров
               semester_numbers=$(echo "$repo" | grep -oP '\d+(?=-semester)')
@@ -119,7 +119,7 @@ jobs:
           echo "### Other Repositories" >> repo_list.md
 
           while IFS= read -r repo; do
-            if [[ "$repo" != *"_"*"-semester" ]]; then
+            if [[ "$repo" != *"-semester" ]]; then
               echo "Processing repository: $repo"
               # Клонируем репозиторий
               rm -rf $repo
