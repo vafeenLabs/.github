@@ -85,11 +85,9 @@ jobs:
                 if [ -f "$repo/README.md" ]; then
                   # Получаем первую строку без символа '#'
                   title=$(head -n 1 $repo/README.md | sed 's/^# //')
-                  # Убираем из названия семестры, чтобы избежать дублирования
-                  title=$(echo "$title" | sed -E 's/ [0-9]+( и [0-9]+)? семестр//')
                   # Записываем данные для каждого семестра
                   for semester in $semester_numbers; do
-                    echo "$semester|$title|$repo" >> $temp_file
+                    echo "$semester|$title ($semester семестр)|$repo" >> $temp_file
                   done
                 else
                   echo "Skipping $repo: README.md not found"
