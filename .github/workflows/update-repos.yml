@@ -78,7 +78,7 @@ jobs:
             if [[ "$repo" == *"-semester"* ]]; then
               echo "Processing repository: $repo"
               # Извлекаем все номера семестров
-              semester_numbers=$(echo "$repo" | grep -oP '\d+(?=-semester)')
+              semester_numbers=$(echo "$repo" | grep -oP '\d+(?=-semester)|\d+(?=-\d+-semester)')
               # Клонируем репозиторий
               rm -rf $repo
               if git clone --depth=1 https://github.com/vafeenLabs/$repo $repo; then
