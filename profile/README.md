@@ -4,7 +4,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-## Repositories (UPD 23.03.25 02:28:17 MSK)
+## Repositories (UPD 23.03.25 02:36:54 MSK)
 ### Semesters
 
 #### Semester 2
@@ -13,18 +13,20 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 #### Semester 3
 - [Объектно-ориентированное программирование 3 семестр](https://github.com/vafeenLabs/OOP_3-semester)
+- [Структуры данных и алгоритмы 3 и 4 семестр](https://github.com/vafeenLabs/data-structures-and-algorithms_3-4-semester)
 - [Экономика 3 семестр](https://github.com/vafeenLabs/economy-presentation_3-semester)
 
 #### Semester 4
 - [Reading log по Английскому 4 семестр](https://github.com/vafeenLabs/english-reading-log_4-semester)
 - [Архитектуры вычислительных систем 4 семестр](https://github.com/vafeenLabs/architecture-of-computing-systems_4-semester)
+- [Базы данных 4 и 5 семестр](https://github.com/vafeenLabs/db_4-5-semester)
 - [Операционные системы 4 семестр](https://github.com/vafeenLabs/OS_4-semester)
 - [Структуры данных и алгоритмы 3 и 4 семестр](https://github.com/vafeenLabs/data-structures-and-algorithms_3-4-semester)
 
 #### Semester 5
 - [Архитектуры мобильных систем 5 семестр](https://github.com/vafeenLabs/mobile-device-architectures_5-semester)
 - [Архитектуры современных микропроцессоров 5 семестр](https://github.com/vafeenLabs/architecture-of-modern-microprocessors_5-semester)
-- [Базы данных 4 и 5 семестр](https://github.com/vafeenLabs/db_5-semester)
+- [Базы данных 4 и 5 семестр](https://github.com/vafeenLabs/db_4-5-semester)
 - [Компьютерные сети 5 семестр](https://github.com/vafeenLabs/computer-networks_5-semester)
 - [Математические основы компьютерной графики 5 семестр](https://github.com/vafeenLabs/mathematical-foundations-of-computer-graphics_5-semester)
 - [Параллельное программирование 5 семестр](https://github.com/vafeenLabs/parallel-programming_5-semester)
