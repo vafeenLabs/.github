@@ -73,18 +73,22 @@ jobs:
 
           while IFS= read -r repo; do
             if [[ "$repo" == *"_"*"-semester" ]]; then
+              echo "Processing repository: $repo"
               # Извлекаем номер семестра
               semester_number=$(echo "$repo" | grep -oP '(?<=_)\d+(?=-semester)')
               # Клонируем репозиторий
               rm -rf $repo
-              git clone --depth=1 https://github.com/vafeenLabs/$repo $repo
-              if [ -f "$repo/README.md" ]; then
-                # Получаем первую строку без символа '#'
-                title=$(head -n 1 $repo/README.md | sed 's/^# //')
-                # Записываем данные во временный файл
-                echo "$semester_number|$title|$repo" >> $temp_file
+              if git clone --depth=1 https://github.com/vafeenLabs/$repo $repo; then
+                if [ -f "$repo/README.md" ]; then
+                  # Получаем первую строку без символа '#'
+                  title=$(head -n 1 $repo/README.md | sed 's/^# //')
+                  # Записываем данные во временный файл
+                  echo "$semester_number|$title|$repo" >> $temp_file
+                else
+                  echo "Skipping $repo: README.md not found"
+                fi
               else
-                echo "Skipping $repo: README.md not found"
+                echo "Failed to clone $repo"
               fi
               # Удаляем директорию после обработки
               rm -rf $repo
@@ -105,15 +109,19 @@ jobs:
 
           while IFS= read -r repo; do
             if [[ "$repo" != *"_"*"-semester" ]]; then
+              echo "Processing repository: $repo"
               # Клонируем репозиторий
               rm -rf $repo
-              git clone --depth=1 https://github.com/vafeenLabs/$repo $repo
-              if [ -f "$repo/README.md" ]; then
-                # Получаем первую строку без символа '#'
-                title=$(head -n 1 $repo/README.md | sed 's/^# //')
-                echo "- [$title](https://github.com/vafeenLabs/$repo)" >> repo_list.md
+              if git clone --depth=1 https://github.com/vafeenLabs/$repo $repo; then
+                if [ -f "$repo/README.md" ]; then
+                  # Получаем первую строку без символа '#'
+                  title=$(head -n 1 $repo/README.md | sed 's/^# //')
+                  echo "- [$title](https://github.com/vafeenLabs/$repo)" >> repo_list.md
+                else
+                  echo "Skipping $repo: README.md not found"
+                fi
               else
-                echo "Skipping $repo: README.md not found"
+                echo "Failed to clone $repo"
               fi
               # Удаляем директорию после обработки
               rm -rf $repo
