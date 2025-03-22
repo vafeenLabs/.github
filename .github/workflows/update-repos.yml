@@ -68,14 +68,14 @@ jobs:
           echo "" >> repo_list.md
           echo "## Repositories (UPD $datetime)" >> repo_list.md
 
-          # Обрабатываем репозитории, заканчивающиеся на -semester
+          # Обрабатываем репозитории, содержащие -semester
           echo "### Semesters" >> repo_list.md
 
           # Создаем временный файл для хранения данных о семестрах
           temp_file=$(mktemp)
 
           while IFS= read -r repo; do
-            if [[ "$repo" == *"-semester" ]]; then
+            if [[ "$repo" == *"-semester"* ]]; then
               echo "Processing repository: $repo"
               # Извлекаем все номера семестров
               semester_numbers=$(echo "$repo" | grep -oP '\d+(?=-semester)')
@@ -85,6 +85,8 @@ jobs:
                 if [ -f "$repo/README.md" ]; then
                   # Получаем первую строку без символа '#'
                   title=$(head -n 1 $repo/README.md | sed 's/^# //')
+                  # Убираем из названия семестры, чтобы избежать дублирования
+                  title=$(echo "$title" | sed -E 's/ [0-9]+( и [0-9]+)? семестр//')
                   # Записываем данные для каждого семестра
                   for semester in $semester_numbers; do
                     echo "$semester|$title|$repo" >> $temp_file
@@ -119,7 +121,7 @@ jobs:
           echo "### Other Repositories" >> repo_list.md
 
           while IFS= read -r repo; do
-            if [[ "$repo" != *"-semester" ]]; then
+            if [[ "$repo" != *"-semester"* ]]; then
               echo "Processing repository: $repo"
               # Клонируем репозиторий
               rm -rf $repo
