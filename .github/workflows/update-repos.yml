@@ -78,11 +78,13 @@ jobs:
               # Клонируем репозиторий
               rm -rf $repo
               git clone --depth=1 https://github.com/vafeenLabs/$repo $repo
-              if [ -f $repo/README.md ]; then
+              if [ -f "$repo/README.md" ]; then
                 # Получаем первую строку без символа '#'
                 title=$(head -n 1 $repo/README.md | sed 's/^# //')
                 # Записываем данные во временный файл
                 echo "$semester_number|$title|$repo" >> $temp_file
+              else
+                echo "Skipping $repo: README.md not found"
               fi
               # Удаляем директорию после обработки
               rm -rf $repo
@@ -106,10 +108,12 @@ jobs:
               # Клонируем репозиторий
               rm -rf $repo
               git clone --depth=1 https://github.com/vafeenLabs/$repo $repo
-              if [ -f $repo/README.md ]; then
+              if [ -f "$repo/README.md" ]; then
                 # Получаем первую строку без символа '#'
                 title=$(head -n 1 $repo/README.md | sed 's/^# //')
                 echo "- [$title](https://github.com/vafeenLabs/$repo)" >> repo_list.md
+              else
+                echo "Skipping $repo: README.md not found"
               fi
               # Удаляем директорию после обработки
               rm -rf $repo
