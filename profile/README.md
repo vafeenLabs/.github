@@ -4,7 +4,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-## Repositories (UPD 23.03.25 01:52:50 MSK)
+## Repositories (UPD 23.03.25 01:59:04 MSK)
 ### Semesters
 
 #### Semester 2
