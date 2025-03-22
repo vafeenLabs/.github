@@ -4,26 +4,25 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-## Repositories (UPD 23.03.25 02:46:17 MSK)
-### Semesters
+## Repositories (UPD 23.03.25 02:49:07 MSK)
 
-#### Semester 2
+#### 2 semester
 - [Информатика и программирование 2 семестр: Курсовая](https://github.com/vafeenLabs/computer-science-and-programming_2-semester)
 - [Пакеты прикладных программ 2 семестр](https://github.com/vafeenLabs/application-software-packages_2-semester)
 
-#### Semester 3
+#### 3 semester
 - [Объектно-ориентированное программирование 3 семестр](https://github.com/vafeenLabs/OOP_3-semester)
 - [Структуры данных и алгоритмы 3 и 4 семестр](https://github.com/vafeenLabs/data-structures-and-algorithms_3-4-semester)
 - [Экономика 3 семестр](https://github.com/vafeenLabs/economy-presentation_3-semester)
 
-#### Semester 4
+#### 4 semester
 - [Reading log по Английскому 4 семестр](https://github.com/vafeenLabs/english-reading-log_4-semester)
 - [Архитектуры вычислительных систем 4 семестр](https://github.com/vafeenLabs/architecture-of-computing-systems_4-semester)
 - [Базы данных 4 и 5 семестр](https://github.com/vafeenLabs/db_4-5-semester)
 - [Операционные системы 4 семестр](https://github.com/vafeenLabs/OS_4-semester)
 - [Структуры данных и алгоритмы 3 и 4 семестр](https://github.com/vafeenLabs/data-structures-and-algorithms_3-4-semester)
 
-#### Semester 5
+#### 5 semester
 - [Архитектуры мобильных систем 5 семестр](https://github.com/vafeenLabs/mobile-device-architectures_5-semester)
 - [Архитектуры современных микропроцессоров 5 семестр](https://github.com/vafeenLabs/architecture-of-modern-microprocessors_5-semester)
 - [Базы данных 4 и 5 семестр](https://github.com/vafeenLabs/db_4-5-semester)
@@ -34,7 +33,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 - [Программирование на python 5 семестр](https://github.com/vafeenLabs/python_5-semester)
 - [Численные методы 5 семестр](https://github.com/vafeenLabs/numerical-methods_5-semester)
 
-#### Semester 6
+#### 6 semester
 - [Курсовая работа 6 семестр](https://github.com/vafeenLabs/Coursework_6-semester)
 - [Объектно-ориентированный анализ и проектирование 6 семестр](https://github.com/vafeenLabs/object-oriented-analysis-and-design_6-semester)
 - [Отчет по курсовой работе 6 семестр](https://github.com/vafeenLabs/coursework-report_6-semester)
