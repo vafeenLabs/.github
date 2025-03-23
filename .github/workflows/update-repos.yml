@@ -4,9 +4,6 @@ on:
   schedule:
     - cron: "0 0 * * *" # Выполнять каждый день в полночь
   workflow_dispatch: # Позволяет запускать вручную
-  push:
-    tags:
-      - "v*" # Запускаем workflow только при пуше тегов, начинающихся на "v"
 
 permissions:
   contents: write # Дает разрешение на чтение и запись содержимого репозитория (необходим для коммитов и пушей)
@@ -19,128 +16,24 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Install dependencies
-        run: sudo apt-get install -y jq git
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
 
-      - name: Fetch repository list
-        id: fetch_repos
+      - name: Find and Run JAR file
         run: |
-          # Инициализируем пустой массив для репозиториев
-          all_repos=()
-          page=1
+          # Ищем JAR-файл с именем, начинающимся на "Update-repos-"
+          JAR_FILE=$(find . -name "Update-repos-*.jar" | head -n 1)
+          if [[ -z "$JAR_FILE" ]]; then
+            echo "::error::JAR file not found!"
+            exit 1
+          fi
+          echo "Found JAR file: $JAR_FILE"
 
-          while true; do
-            # Получаем репозитории для текущей страницы
-            repos=$(curl -s "https://api.github.com/users/vafeenLabs/repos?page=$page&per_page=100" | jq -r '.[] | select(.private == false) | .name')
-
-            # Если репозиториев больше нет, выходим из цикла
-            if [[ -z "$repos" ]]; then
-              break
-            fi
-
-            # Добавляем репозитории в массив
-            all_repos+=($repos)
-
-            # Переходим к следующей странице
-            ((page++))
-          done
-
-          # Сохраняем список в файл
-          printf "%s\n" "${all_repos[@]}" > repos.txt
-
-      - name: Generate repository list with header
-        run: |
-          set -e  # Прерывать выполнение при ошибке
-          set -x  # Включить отладочный вывод
-
-          # Устанавливаем часовой пояс MSK
-          export TZ=Europe/Moscow
-
-          # Получаем текущую дату и время
-          datetime=$(date "+%d.%m.%y %H:%M:%S MSK")
-
-          # Добавляем текст в начало
-          echo "# by [Vafeen](https://github.com/vafeen) ![Profile Views](https://komarev.com/ghpvc/?username=vafeenLabs&label=Profile%20views&color=0e75b6&style=flat)" > repo_list.md
-          echo "" >> repo_list.md
-          echo "This is a cemetery of my projects and labs that I have ever done, put my soul and time into them, and time is the most valuable thing we have. I believe that this will help more than one person, at least, save time and energy, and maybe it will help someone understand something. In general, welcome!" >> repo_list.md
-          echo "" >> repo_list.md
-          echo "![](vafeen.jpg)" >> repo_list.md
-          echo "" >> repo_list.md
-          echo "## Repositories (UPD $datetime)" >> repo_list.md
-
-          # Обрабатываем репозитории, содержащие -semester
-          # Создаем временный файл для хранения данных о семестрах
-          temp_file=$(mktemp)
-
-          while IFS= read -r repo; do
-            if [[ "$repo" == *"-semester"* ]]; then
-              echo "Processing repository: $repo"
-              # Извлекаем все номера семестров
-              semester_numbers=$(echo "$repo" | sed 's/.*_//; s/-semester//; s/-/ /g')
-              # Клонируем репозиторий
-              rm -rf $repo
-              if git clone --depth=1 https://github.com/vafeenLabs/$repo $repo; then
-                if [ -f "$repo/README.md" ]; then
-                  # Получаем первую строку без символа '#'
-                  title=$(head -n 1 $repo/README.md | sed 's/^# //')
-                  # Записываем данные для каждого семестра
-                  for semester in $semester_numbers; do
-                    echo "$semester|$title|$repo" >> $temp_file
-                  done
-                else
-                  echo "Skipping $repo: README.md not found"
-                fi
-              else
-                echo "Failed to clone $repo"
-              fi
-              # Удаляем директорию после обработки
-              rm -rf $repo
-            fi
-          done < repos.txt
-
-          # Сортируем временный файл по номеру семестра и названию
-          sort -t'|' -k1,1n -k2,2 $temp_file | while IFS='|' read -r semester title repo; do
-            # Проверяем, является ли это первым упоминанием семестра
-            if [[ "$semester" != "$last_semester" ]]; then
-              echo "" >> repo_list.md
-              echo "#### $semester semester" >> repo_list.md
-              last_semester=$semester
-            fi
-            echo "- [$title](https://github.com/vafeenLabs/$repo)" >> repo_list.md
-          done
-
-          # Удаляем временный файл
-          rm -f $temp_file
-
-          # Обрабатываем остальные репозитории
-          echo "" >> repo_list.md
-          echo "### Other Repositories" >> repo_list.md
-
-          while IFS= read -r repo; do
-            if [[ "$repo" != *"-semester"* ]]; then
-              echo "Processing repository: $repo"
-              # Клонируем репозиторий
-              rm -rf $repo
-              if git clone --depth=1 https://github.com/vafeenLabs/$repo $repo; then
-                if [ -f "$repo/README.md" ]; then
-                  # Получаем первую строку без символа '#'
-                  title=$(head -n 1 $repo/README.md | sed 's/^# //')
-                  echo "- [$title](https://github.com/vafeenLabs/$repo)" >> repo_list.md
-                else
-                  echo "Skipping $repo: README.md not found"
-                fi
-              else
-                echo "Failed to clone $repo"
-              fi
-              # Удаляем директорию после обработки
-              rm -rf $repo
-            fi
-          done < repos.txt
-
-      - name: Update profile/README.md
-        run: |
-          # Заменяем содержимое README.md на новое
-          mv repo_list.md profile/README.md
+          # Запускаем найденный JAR-файл
+          java -jar "$JAR_FILE"
 
       - name: Check for changes
         run: |
