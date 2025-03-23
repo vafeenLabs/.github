@@ -4,11 +4,9 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-2025-03-23T19:29:48.932102955
+2025-03-23T20:14:33.238137306
 
 Repos:
-
-
 
 Semester: 2
 
@@ -16,15 +14,13 @@ Semester: 2
 
 [Информатика и программирование 2 семестр: Курсовая](https://github.com/vafeenLabs/computer-science-and-programming_2-semester)
 
-
-
 Semester: 3
 
 [Структуры данных и алгоритмы 3 и 4 семестр](https://github.com/vafeenLabs/data-structures-and-algorithms_3-4-semester)
 
 [Экономика 3 семестр](https://github.com/vafeenLabs/economy-presentation_3-semester)
 
-
+[Объектно-ориентированное программирование 3 семестр](https://github.com/vafeenLabs/OOP_3-semester)
 
 Semester: 4
 
@@ -36,7 +32,7 @@ Semester: 4
 
 [Reading log по Английскому 4 семестр](https://github.com/vafeenLabs/english-reading-log_4-semester)
 
-
+[Операционные системы 4 семестр](https://github.com/vafeenLabs/OS_4-semester)
 
 Semester: 5
 
@@ -50,7 +46,13 @@ Semester: 5
 
 [Математические основы компьютерной графики 5 семестр](https://github.com/vafeenLabs/mathematical-foundations-of-computer-graphics_5-semester)
 
+[Архитектуры мобильных систем 5 семестр](https://github.com/vafeenLabs/mobile-device-architectures_5-semester)
 
+[Численные методы 5 семестр](https://github.com/vafeenLabs/numerical-methods_5-semester)
+
+[Параллельное программирование 5 семестр](https://github.com/vafeenLabs/parallel-programming_5-semester)
+
+[Программирование на python 5 семестр](https://github.com/vafeenLabs/python_5-semester)
 
 Semester: 6
 
@@ -58,11 +60,21 @@ Semester: 6
 
 [Курсовая работа 6 семестр](https://github.com/vafeenLabs/Coursework_6-semester)
 
+[Объектно-ориентированный анализ и проектирование 6 семестр](https://github.com/vafeenLabs/object-oriented-analysis-and-design_6-semester)
 
+Semester: 1mag
+
+[test 1mag semester](https://github.com/vafeenLabs/test_1mag-semester)
 
 others
 
 [Windows 10 PRO activator](https://github.com/vafeenLabs/cmd-win10-pro-activator)
 
 [Практическое задание на стажировке SURF 2024](https://github.com/vafeenLabs/internship-2-course-surf)
+
+[Microsoft-Office-LTS-Professional-Plus-2021](https://github.com/vafeenLabs/Microsoft-Office-LTS-Professional-Plus-2021)
+
+[Niapoll's phrases as the meaning of life app](https://github.com/vafeenLabs/niapolls-phrases-as-the-meaning-of-life)
+
+[Программа для считывания всех репозиториев и обновления README.md файла](https://github.com/vafeenLabs/update-repos-kotlin)
 
