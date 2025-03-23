@@ -4,7 +4,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-## Repositories (UPD 23.03.25 03:06:45 MSK)
+## Repositories (UPD 23.03.25 04:55:55 MSK)
 
 #### 1mag semester
 - [test 1mag semester](https://github.com/vafeenLabs/test_1mag-semester)
@@ -42,7 +42,9 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 - [Отчет по курсовой работе 6 семестр](https://github.com/vafeenLabs/coursework-report_6-semester)
 
 ### Other Repositories
+- [by [Vafeen](https://github.com/vafeen) ![Profile Views](https://komarev.com/ghpvc/?username=vafeenLabs&label=Profile%20views&color=0e75b6&style=flat)](https://github.com/vafeenLabs/.github)
 - [Windows 10 PRO activator ](https://github.com/vafeenLabs/cmd-win10-pro-activator)
 - [Практическое задание на стажировке SURF 2024](https://github.com/vafeenLabs/internship-2-course-surf)
 - [Microsoft-Office-LTS-Professional-Plus-2021 ](https://github.com/vafeenLabs/Microsoft-Office-LTS-Professional-Plus-2021)
 - [Niapoll's phrases as the meaning of life app](https://github.com/vafeenLabs/niapolls-phrases-as-the-meaning-of-life)
+- [update-repos-kotlin](https://github.com/vafeenLabs/update-repos-kotlin)
