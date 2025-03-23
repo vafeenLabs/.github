@@ -4,20 +4,14 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-## Repositories (UPD 23.03.25 03:00:05 MSK)
+## Repositories (UPD 23.03.25 03:06:45 MSK)
 
 #### 1mag semester
 - [test 1mag semester](https://github.com/vafeenLabs/test_1mag-semester)
 
-#### 1magistr semester
-- [test_1magistr-semester](https://github.com/vafeenLabs/test_1magistr-semester)
-
 #### 2 semester
 - [Информатика и программирование 2 семестр: Курсовая](https://github.com/vafeenLabs/computer-science-and-programming_2-semester)
 - [Пакеты прикладных программ 2 семестр](https://github.com/vafeenLabs/application-software-packages_2-semester)
-
-#### 2mag semester
-- [test_2mag-semester](https://github.com/vafeenLabs/test_2mag-semester)
 
 #### 3 semester
 - [Объектно-ориентированное программирование 3 семестр](https://github.com/vafeenLabs/OOP_3-semester)
