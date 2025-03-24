@@ -4,7 +4,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-Last update: 24.03.2025 in 1:53:55
+Last update: 24.03.2025 in 20:21:51
 
 Repos:
 
@@ -70,7 +70,7 @@ others
 
 [Windows 10 PRO activator](https://github.com/vafeenLabs/cmd-win10-pro-activator)
 
-[Практическое задание на стажировке SURF 2024](https://github.com/vafeenLabs/internship-2-course-surf)
+[Практическия задания и проект со стажировки SURF 2024](https://github.com/vafeenLabs/internship-2-course-surf)
 
 [Microsoft-Office-LTS-Professional-Plus-2021](https://github.com/vafeenLabs/Microsoft-Office-LTS-Professional-Plus-2021)
 
