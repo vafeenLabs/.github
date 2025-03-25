@@ -4,9 +4,9 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-Last update: 25.03.2025 в 23:29:51 MSK
+# Last update: 25.03.2025 в 23:32:26 MSK
 
-Repos:
+# Repos:
 
 Semester: 2
 
