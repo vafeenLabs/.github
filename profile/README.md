@@ -4,7 +4,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-# Last update: 25.03.2025 в 23:32:26 MSK
+# Last update: 26.03.2025 в 00:18:29 MSK
 
 # Repos:
 
@@ -68,13 +68,43 @@ Semester: 1mag
 
 others
 
-[Windows 10 PRO activator](https://github.com/vafeenLabs/cmd-win10-pro-activator)
+[Набор cmd-файлов для добавления в контекстном меню проводника такие программы, как Git, CMD, Intellij IDEA, Android Studio, VSCode](https://github.com/vafeenLabs/cmd-install)
+
+[Консольная программа на C++ для создания N .txt файлов в текущей папке](https://github.com/vafeenLabs/cpp-file-creator)
+
+[Методы для работы с матрицами на С++ (умножение, транспонирование)](https://github.com/vafeenLabs/cpp-methods-for-matrix)
+
+[Консольный бой покемонов 3 на 3 на С++](https://github.com/vafeenLabs/cpp-pockemon-fights)
+
+[Git pusher - программа для быстрого пуша индекса в текущую ветку (source code on Python and C++)](https://github.com/vafeenLabs/cpp-py-gitpusher)
+
+[Система регистрации пользователей на С++ с профилем админа](https://github.com/vafeenLabs/cpp-registratrion-system)
+
+[Песочница для работы с матрицами на С++ (инициализация, вывод, транспонирование, отражение, прокрутка по обоим сторонам часовой стрелки, сложение, умножение, удаление)](https://github.com/vafeenLabs/cpp-sandbox-matrix-calculator)
+
+[Программа для создания спиральной матрицы N*N на C++](https://github.com/vafeenLabs/cpp-spiral)
+
+[Игрушечная вирусная программа, которая создает сотни тысяч пустых файлов, заставляя виснуть ПК](https://github.com/vafeenLabs/cpp-virus-filecreator)
 
 [Практическия задания и проект со стажировки SURF 2024](https://github.com/vafeenLabs/internship-2-course-surf)
+
+[Потокобезопасный пулл потоков на Kotlin, параллельно решая последовательно поступающие задачи](https://github.com/vafeenLabs/kotlin-threads)
+
+[Ленивый Git: скрипт для пуша всех файлов из индекса с текущим DateTime и скрипт с аргументом в качестве commit message](https://github.com/vafeenLabs/linux-git-pusher)
 
 [Microsoft-Office-LTS-Professional-Plus-2021](https://github.com/vafeenLabs/Microsoft-Office-LTS-Professional-Plus-2021)
 
 [Niapoll's phrases as the meaning of life app](https://github.com/vafeenLabs/niapolls-phrases-as-the-meaning-of-life)
 
+[Программа для создания спиральной матрицы N*N на Python](https://github.com/vafeenLabs/py-spiral)
+
+[Проект для конвертации PDF<->DOCX и соединения PDF файлов](https://github.com/vafeenLabs/python-pdf-helpers)
+
+[Тренироваочное синхронное Flow на Kotlin](https://github.com/vafeenLabs/SynchronousFlowKt)
+
 [Программа для считывания всех репозиториев и обновления README.md файла](https://github.com/vafeenLabs/update-repos-kotlin)
+
+[Набор файлов для vscode для работы с С++ на Linux](https://github.com/vafeenLabs/vscode-for-cpp-linux)
+
+[Набор файлов для vscode для работы с С++ на Windows](https://github.com/vafeenLabs/vscode-for-cpp-windows)
 
