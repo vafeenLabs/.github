@@ -4,7 +4,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-# Last update: 31.03.2025 в 04:56:42 MSK
+# Last update: 01.04.2025 в 05:03:28 MSK
 
 # Repos:
 
@@ -68,7 +68,7 @@ Semester: 1mag
 
 others
 
-[Набор cmd-файлов для добавления в контекстном меню проводника такие программы, как Git, CMD, Intellij IDEA, Android Studio, VSCode](https://github.com/vafeenLabs/cmd-install)
+[Набор cmd-файлов для добавления в контекстное меню проводника такие программы, как Git, CMD, Intellij IDEA, Android Studio, VSCode](https://github.com/vafeenLabs/cmd-install)
 
 [Bash-скрипт компиляции С++ файлов](https://github.com/vafeenLabs/compiler)
 
@@ -102,7 +102,7 @@ others
 
 [Проект для конвертации PDF<->DOCX и соединения PDF файлов](https://github.com/vafeenLabs/python-pdf-helpers)
 
-[Тренироваочное синхронное Flow на Kotlin](https://github.com/vafeenLabs/SynchronousFlowKt)
+[Тренировочное синхронное Flow на Kotlin](https://github.com/vafeenLabs/SynchronousFlowKt)
 
 [Программа для считывания всех репозиториев и обновления README.md файла](https://github.com/vafeenLabs/update-repos-kotlin)
 
