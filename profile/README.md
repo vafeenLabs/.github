@@ -4,7 +4,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-# Last update: 09.04.2025 в 04:52:14 MSK
+# Last update: 10.04.2025 в 04:52:22 MSK
 
 # Repos:
 
@@ -90,7 +90,7 @@ others
 
 [Практическия задания и проект со стажировки SURF 2024](https://github.com/vafeenLabs/internship-2-course-surf)
 
-[Потокобезопасный пулл потоков на Kotlin, параллельно решая последовательно поступающие задачи](https://github.com/vafeenLabs/kotlin-threads)
+[Потокобезопасный пулл потоков на Kotlin, параллельно выполняющий последовательно поступающие задачи](https://github.com/vafeenLabs/kotlin-threads)
 
 [Ленивый Git: скрипт для пуша всех файлов из индекса с текущим DateTime и скрипт с аргументом в качестве commit message](https://github.com/vafeenLabs/linux-git-pusher)
 
