@@ -2,18 +2,18 @@ name: Update Repositories List
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Выполнять каждый день в полночь
-  workflow_dispatch: # Позволяет запускать вручную
+    - cron: "0 0 * * *"
+  workflow_dispatch:
 
 permissions:
-  contents: write # Разрешение на запись в репозиторий
+  contents: write
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout current repository
         uses: actions/checkout@v3
 
       - name: Set up JDK 17
@@ -22,35 +22,30 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Get latest release from vafeenLabs/update-repos-kotlin
+      - name: Get latest release tag
         id: get-release
-        uses: actions/github-script@v6
-        with:
-          script: |
-            const response = await github.rest.repos.getLatestRelease({
-              owner: 'vafeenLabs',
-              repo: 'update-repos-kotlin'
-            });
-            return response.data.tag_name;
-
-      - name: Checkout update-repos-kotlin
-        uses: actions/checkout@v3
-        with:
-          repository: 'vafeenLabs/update-repos-kotlin'
-          ref: ${{ steps.get-release.outputs.result }}
-          path: 'update-repos-kotlin'
-
-      - name: Build the project
-        working-directory: ./update-repos-kotlin
         run: |
-          chmod +x gradlew
-          ./gradlew build
+          LATEST_TAG=$(curl -s https://api.github.com/repos/vafeenLabs/update-repos-kotlin/releases/latest | jq -r '.tag_name')
+          echo "Latest tag: $LATEST_TAG"
+          echo "tag_name=$LATEST_TAG" >> $GITHUB_OUTPUT
 
-      - name: Copy JAR file
+      - name: Download release JAR
+        uses: actions/download-artifact@v3
+        with:
+          repository: vafeenLabs/update-repos-kotlin
+          name: update-repos
+          path: .
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Find and rename JAR
         run: |
-          JAR_PATH=$(find update-repos-kotlin/build/libs -name "*.jar" ! -name "*-sources.jar" | head -n 1)
-          cp "$JAR_PATH" ./update-repos.jar
-          echo "JAR copied to: $(pwd)/update-repos.jar"
+          JAR_FILE=$(find . -name "*.jar" | head -n 1)
+          if [[ -z "$JAR_FILE" ]]; then
+            echo "::error::JAR file not found!"
+            exit 1
+          fi
+          mv "$JAR_FILE" update-repos.jar
+          echo "Using JAR file: update-repos.jar"
 
       - name: Run the updater
         run: |
@@ -64,7 +59,7 @@ jobs:
             git config --local user.name "GitHub Actions Bot"
             git config --local user.email "actions@github.com"
             git add profile/README.md
-            git commit -m "Update repository list with header"
+            git commit -m "Update repository list"
             git push
           fi
         env:
