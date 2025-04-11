@@ -29,23 +29,34 @@ jobs:
           echo "Latest tag: $LATEST_TAG"
           echo "tag_name=$LATEST_TAG" >> $GITHUB_OUTPUT
 
-      - name: Download release JAR
-        uses: actions/download-artifact@v3
+      - name: Checkout update-repos-kotlin
+        uses: actions/checkout@v3
         with:
-          repository: vafeenLabs/update-repos-kotlin
-          name: update-repos
-          path: .
-          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: 'vafeenLabs/update-repos-kotlin'
+          ref: ${{ steps.get-release.outputs.tag_name }}
+          path: 'update-repos-kotlin'
 
-      - name: Find and rename JAR
+      - name: Build the project with Gradle
+        working-directory: ./update-repos-kotlin
         run: |
-          JAR_FILE=$(find . -name "*.jar" | head -n 1)
-          if [[ -z "$JAR_FILE" ]]; then
-            echo "::error::JAR file not found!"
+          # Проверяем наличие gradlew
+          if [ ! -f "./gradlew" ]; then
+            echo "::error::gradlew not found!"
             exit 1
           fi
-          mv "$JAR_FILE" update-repos.jar
-          echo "Using JAR file: update-repos.jar"
+          
+          chmod +x gradlew
+          ./gradlew build --no-daemon
+
+      - name: Find and copy JAR file
+        run: |
+          JAR_PATH=$(find update-repos-kotlin/build/libs -name "*.jar" ! -name "*-sources.jar" ! -name "*-javadoc.jar" | head -n 1)
+          if [[ -z "$JAR_PATH" ]]; then
+            echo "::error::No JAR file found in build/libs!"
+            exit 1
+          fi
+          cp "$JAR_PATH" ./update-repos.jar
+          echo "JAR copied to: $(pwd)/update-repos.jar"
 
       - name: Run the updater
         run: |
@@ -59,7 +70,7 @@ jobs:
             git config --local user.name "GitHub Actions Bot"
             git config --local user.email "actions@github.com"
             git add profile/README.md
-            git commit -m "Update repository list"
+            git commit -m "Update repository list [auto]"
             git push
           fi
         env:
