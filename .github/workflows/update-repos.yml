@@ -6,7 +6,7 @@ on:
   workflow_dispatch: # Позволяет запускать вручную
 
 permissions:
-  contents: write # Дает разрешение на чтение и запись содержимого репозитория (необходим для коммитов и пушей)
+  contents: write # Разрешение на запись в репозиторий
 
 jobs:
   update-readme:
@@ -22,23 +22,44 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Find and Run JAR file
-        run: |
-          # Ищем JAR-файл с именем, начинающимся на "Update-repos-"
-          JAR_FILE=$(find . -name "Update-repos-*.jar" | head -n 1)
-          if [[ -z "$JAR_FILE" ]]; then
-            echo "::error::JAR file not found!"
-            exit 1
-          fi
-          echo "Found JAR file: $JAR_FILE"
+      - name: Get latest release from vafeenLabs/update-repos-kotlin
+        id: get-release
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const response = await github.rest.repos.getLatestRelease({
+              owner: 'vafeenLabs',
+              repo: 'update-repos-kotlin'
+            });
+            return response.data.tag_name;
 
-          # Запускаем найденный JAR-файл
-          java -jar "$JAR_FILE"
+      - name: Checkout update-repos-kotlin
+        uses: actions/checkout@v3
+        with:
+          repository: 'vafeenLabs/update-repos-kotlin'
+          ref: ${{ steps.get-release.outputs.result }}
+          path: 'update-repos-kotlin'
+
+      - name: Build the project
+        working-directory: ./update-repos-kotlin
+        run: |
+          chmod +x gradlew
+          ./gradlew build
+
+      - name: Copy JAR file
+        run: |
+          JAR_PATH=$(find update-repos-kotlin/build/libs -name "*.jar" ! -name "*-sources.jar" | head -n 1)
+          cp "$JAR_PATH" ./update-repos.jar
+          echo "JAR copied to: $(pwd)/update-repos.jar"
+
+      - name: Run the updater
+        run: |
+          java -jar ./update-repos.jar
 
       - name: Check for changes
         run: |
           if git diff --quiet; 
-            then  echo "No changes detected. Skipping commit and push."
+            then echo "No changes detected. Skipping commit and push."
           else 
             git config --local user.name "GitHub Actions Bot"
             git config --local user.email "actions@github.com"
