@@ -4,7 +4,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-# Last update: 11.04.2025 в 04:52:59 MSK
+# Last update: 11.04.2025 в 19:16:19 MSK
 
 # Repos:
 
@@ -68,9 +68,9 @@ Semester: 1mag
 
 others
 
-[Набор cmd-файлов для добавления в контекстное меню проводника такие программы, как Git, CMD, Intellij IDEA, Android Studio, VSCode](https://github.com/vafeenLabs/cmd-install)
+[Bash-скрипт компиляции С++ файлов](https://github.com/vafeenLabs/bash-cpp-compiler)
 
-[Bash-скрипт компиляции С++ файлов](https://github.com/vafeenLabs/compiler)
+[Набор cmd-файлов для добавления в контекстное меню проводника такие программы, как Git, CMD, Intellij IDEA, Android Studio, VSCode](https://github.com/vafeenLabs/cmd-install)
 
 [Консольная программа на C++ для создания N .txt файлов в текущей папке](https://github.com/vafeenLabs/cpp-file-creator)
 
