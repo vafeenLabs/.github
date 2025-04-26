@@ -4,7 +4,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-# Last update: 25.04.2025 в 04:57:01 MSK
+# Last update: 26.04.2025 в 04:52:36 MSK
 
 # Repos:
 
@@ -59,6 +59,8 @@ Semester: 6
 [Отчет по курсовой работе 6 семестр](https://github.com/vafeenLabs/coursework-report_6-semester)
 
 [Курсовая работа 6 семестр](https://github.com/vafeenLabs/Coursework_6-semester)
+
+[Численные методы 6й семестр](https://github.com/vafeenLabs/numerical-methods_6-semester)
 
 [Объектно-ориентированный анализ и проектирование 6 семестр](https://github.com/vafeenLabs/object-oriented-analysis-and-design_6-semester)
 
