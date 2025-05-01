@@ -4,7 +4,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-# Last update: 30.04.2025 в 04:56:56 MSK
+# Last update: 01.05.2025 в 05:06:19 MSK
 
 # Repos:
 
@@ -23,6 +23,8 @@ Semester: 3
 [Объектно-ориентированное программирование 3 семестр](https://github.com/vafeenLabs/OOP_3-semester)
 
 Semester: 4
+
+[Архитектуры вычислительных систем 4 семестр](https://github.com/vafeenLabs/architecture-of-computing-systems_4-semester)
 
 [Структуры данных и алгоритмы 3 и 4 семестр](https://github.com/vafeenLabs/data-structures-and-algorithms_3-4-semester)
 
@@ -50,7 +52,11 @@ Semester: 5
 
 [Параллельное программирование 5 семестр](https://github.com/vafeenLabs/parallel-programming_5-semester)
 
+[Программирование на python 5 семестр](https://github.com/vafeenLabs/python_5-semester)
+
 Semester: 6
+
+[Отчет по курсовой работе 6 семестр](https://github.com/vafeenLabs/coursework-report_6-semester)
 
 [Курсовая работа 6 семестр](https://github.com/vafeenLabs/Coursework_6-semester)
 
@@ -91,6 +97,8 @@ others
 [Ленивый Git: скрипт для пуша всех файлов из индекса с текущим DateTime и скрипт с аргументом в качестве commit message](https://github.com/vafeenLabs/linux-git-pusher)
 
 [Microsoft-Office-LTS-Professional-Plus-2021](https://github.com/vafeenLabs/Microsoft-Office-LTS-Professional-Plus-2021)
+
+[Niapoll's phrases as the meaning of life app](https://github.com/vafeenLabs/niapolls-phrases-as-the-meaning-of-life)
 
 [Программа для создания спиральной матрицы N*N на Python](https://github.com/vafeenLabs/py-spiral)
 
