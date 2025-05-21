@@ -4,7 +4,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-# Last update: 20.05.2025 в 05:01:35 MSK
+# Last update: 21.05.2025 в 05:00:44 MSK
 
 # Repos:
 
@@ -56,8 +56,6 @@ Semester: 5
 
 Semester: 6
 
-[Отчет по курсовой работе 6 семестр](https://github.com/vafeenLabs/coursework-report_6-semester)
-
 [Курсовая работа 6 семестр](https://github.com/vafeenLabs/Coursework_6-semester)
 
 [Численные методы 6 семестр](https://github.com/vafeenLabs/numerical-methods_6-semester)
@@ -93,6 +91,8 @@ others
 [Практическия задания и проект со стажировки SURF 2024](https://github.com/vafeenLabs/internship-2-course-surf)
 
 [Потокобезопасный пулл потоков на Kotlin, параллельно выполняющий последовательно поступающие задачи](https://github.com/vafeenLabs/kotlin-threads)
+
+[Learn2Invest](https://github.com/vafeenLabs/learn2Invest-2.0-chery)
 
 [Ленивый Git: скрипт для пуша всех файлов из индекса с текущим DateTime и скрипт с аргументом в качестве commit message](https://github.com/vafeenLabs/linux-git-pusher)
 
