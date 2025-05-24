@@ -4,7 +4,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-# Last update: 24.05.2025 в 04:56:02 MSK
+# Last update: 24.05.2025 в 18:57:46 MSK
 
 # Repos:
 
@@ -55,6 +55,8 @@ Semester: 5
 [Программирование на python 5 семестр](https://github.com/vafeenLabs/python_5-semester)
 
 Semester: 6
+
+[Основы облачных вычислений 6й семестр](https://github.com/vafeenLabs/cloud-computing-basics_6-semester)
 
 [Курсовая работа 6 семестр](https://github.com/vafeenLabs/Coursework_6-semester)
 
