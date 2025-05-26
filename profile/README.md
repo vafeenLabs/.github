@@ -4,7 +4,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-# Last update: 25.05.2025 в 05:09:29 MSK
+# Last update: 26.05.2025 в 05:04:09 MSK
 
 # Repos:
 
@@ -71,6 +71,8 @@ Semester: 1mag
 [test 1mag semester](https://github.com/vafeenLabs/test_1mag-semester)
 
 others
+
+[Android App with Firebase cloud messaging and backend on Kotlin example](https://github.com/vafeenLabs/Android-FCM-with-Kotlin-Backend-example)
 
 [Bash-скрипт компиляции С++ файлов](https://github.com/vafeenLabs/bash-cpp-compiler)
 
