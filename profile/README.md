@@ -4,7 +4,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-# Last update: 28.05.2025 в 05:01:26 MSK
+# Last update: 28.05.2025 в 06:19:24 MSK
 
 # Repos:
 
@@ -94,7 +94,7 @@ others
 
 [Игрушечная вирусная программа, которая создает сотни тысяч пустых файлов, заставляя виснуть ПК](https://github.com/vafeenLabs/cpp-virus-filecreator)
 
-[Практическия задания и проект со стажировки SURF 2024](https://github.com/vafeenLabs/internship-2-course-surf)
+[Практические задания и проект со стажировки SURF 2024](https://github.com/vafeenLabs/internship-2-course-surf)
 
 [Потокобезопасный пулл потоков на Kotlin, параллельно выполняющий последовательно поступающие задачи](https://github.com/vafeenLabs/kotlin-threads)
 
