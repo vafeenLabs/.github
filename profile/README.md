@@ -4,7 +4,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-# Last update: 27.05.2025 в 04:59:26 MSK
+# Last update: 28.05.2025 в 05:01:26 MSK
 
 # Repos:
 
@@ -109,6 +109,8 @@ others
 [Программа для создания спиральной матрицы N*N на Python](https://github.com/vafeenLabs/py-spiral)
 
 [Проект для конвертации PDF<->DOCX и соединения PDF файлов](https://github.com/vafeenLabs/python-pdf-helpers)
+
+[Report about sha-256 on Google I/O 2025 conference](https://github.com/vafeenLabs/SHA256-report-for-Google-IO-2025)
 
 [Тренировочное синхронное Flow на Kotlin](https://github.com/vafeenLabs/SynchronousFlowKt)
 
