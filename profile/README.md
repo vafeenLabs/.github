@@ -4,7 +4,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-# Last update: 03.06.2025 в 05:03:14 MSK
+# Last update: 04.06.2025 в 05:03:16 MSK
 
 # Repos:
 
@@ -101,6 +101,8 @@ others
 [Потокобезопасный пулл потоков на Kotlin, параллельно выполняющий последовательно поступающие задачи](https://github.com/vafeenLabs/kotlin-threads)
 
 [Learn2Invest-2.0-chery](https://github.com/vafeenLabs/learn2Invest-2.0-chery)
+
+[Learn2Invest](https://github.com/vafeenLabs/learn2invest-2.0-dagger2)
 
 [Ленивый Git: скрипт для пуша всех файлов из индекса с текущим DateTime и скрипт с аргументом в качестве commit message](https://github.com/vafeenLabs/linux-git-pusher)
 
