@@ -4,7 +4,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-# Last update: 07.06.2025 в 05:00:23 MSK
+# Last update: 08.06.2025 в 05:11:48 MSK
 
 # Repos:
 
@@ -58,6 +58,8 @@ Semester: 6
 
 [Основы облачных вычислений 6 семестр](https://github.com/vafeenLabs/cloud-computing-basics_6-semester)
 
+[Компьютерная графика 6 семестр: гитара без фона](https://github.com/vafeenLabs/computer-graphics-guitar-without-background_6-semester)
+
 [Отчет по курсовой работе 6 семестр](https://github.com/vafeenLabs/coursework-report_6-semester)
 
 [Курсовая работа 6 семестр](https://github.com/vafeenLabs/Coursework_6-semester)
@@ -71,6 +73,10 @@ Semester: 6
 Semester: 1mag
 
 [test 1mag semester](https://github.com/vafeenLabs/test_1mag-semester)
+
+Semester: 6_
+
+[Основы научно-исследовательской деятельности 6 семестр](https://github.com/vafeenLabs/fundamentals-of-scientific-research-activities_6_semester)
 
 others
 
