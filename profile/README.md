@@ -35,7 +35,7 @@
 > Последнее обновление: 09.06.2025
 
 
-# Last update: 09.06.2025 в 04:15:44 MSK
+# Last update: 09.06.2025 в 04:18:06 MSK
 
 # Repos:
 
@@ -113,6 +113,8 @@ Semester: 6
 
 [Демонстрация курсовой работы 6 семестр](https://github.com/vafeenLabs/demo-coursework_6-semester)
 
+[Основы научно-исследовательской деятельности 6 семестр](https://github.com/vafeenLabs/fundamentals-of-scientific-research-activities_6-semester)
+
 [Численные методы 6 семестр](https://github.com/vafeenLabs/numerical-methods_6-semester)
 
 [Объектно-ориентированный анализ и проектирование 6 семестр](https://github.com/vafeenLabs/object-oriented-analysis-and-design_6-semester)
@@ -120,10 +122,6 @@ Semester: 6
 Semester: 1mag
 
 [test 1mag semester](https://github.com/vafeenLabs/test_1mag-semester)
-
-Semester: 6_
-
-[Основы научно-исследовательской деятельности 6 семестр](https://github.com/vafeenLabs/fundamentals-of-scientific-research-activities_6_semester)
 
 others
 
