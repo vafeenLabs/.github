@@ -4,7 +4,7 @@ This is a cemetery of my projects and labs that I have ever done, put my soul an
 
 ![](vafeen.jpg)
 
-# Last update: 08.06.2025 в 05:11:48 MSK
+# Last update: 09.06.2025 в 03:53:05 MSK
 
 # Repos:
 
@@ -58,7 +58,23 @@ Semester: 6
 
 [Основы облачных вычислений 6 семестр](https://github.com/vafeenLabs/cloud-computing-basics_6-semester)
 
-[Компьютерная графика 6 семестр: гитара без фона](https://github.com/vafeenLabs/computer-graphics-guitar-without-background_6-semester)
+[Компьютерная графика 6 семестр: 3d гитара без фона](https://github.com/vafeenLabs/computer-graphics-guitar-without-background_6-semester)
+
+[Компьютерная графика 6 семестр: 3d гитара с фоном](https://github.com/vafeenLabs/computer-graphics-guitar_6-semester)
+
+[Компьютерная графика 6 семестр: мебель 3d](https://github.com/vafeenLabs/computer-graphics-mebel_6-semester)
+
+[Компьютерная графика 6 семестр: 2d Самолет с текстурами](https://github.com/vafeenLabs/computer-graphics-plane_6-semester)
+
+[Компьютерная грфаика 6 семестр: улитка 3d](https://github.com/vafeenLabs/computer-graphics-snail_6-semester)
+
+[Компьютерная графика 6 семестр: источник света](https://github.com/vafeenLabs/computer-graphics-spotlight_6-semester)
+
+[Компьютерная графика 6 семестр: 3d куб с текстурой](https://github.com/vafeenLabs/computer-graphics-texture-cube_6-semester)
+
+[Компьютерная графика 6 семестр: куб с текстурой](https://github.com/vafeenLabs/computer-graphics-texture-square_6-semester)
+
+[Компьютерная графика 6 семестр: машинка 3d](https://github.com/vafeenLabs/computer-graphics-truck_6-semester)
 
 [Отчет по курсовой работе 6 семестр](https://github.com/vafeenLabs/coursework-report_6-semester)
 
