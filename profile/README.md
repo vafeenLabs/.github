@@ -37,7 +37,7 @@
 ![](vafeen.jpg)
 
 
-# Last update: 15.06.2025 в 05:19:20 MSK
+# Last update: 16.06.2025 в 05:07:48 MSK
 
 # Repos:
 
@@ -116,6 +116,8 @@ Semester: 6
 [Демонстрация курсовой работы 6 семестр](https://github.com/vafeenLabs/demo-coursework_6-semester)
 
 [Основы научно-исследовательской деятельности 6 семестр](https://github.com/vafeenLabs/fundamentals-of-scientific-research-activities_6-semester)
+
+[Java 6 семестр](https://github.com/vafeenLabs/java_6-semester)
 
 [Численные методы 6 семестр](https://github.com/vafeenLabs/numerical-methods_6-semester)
 
