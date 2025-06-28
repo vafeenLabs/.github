@@ -37,7 +37,7 @@
 ![](vafeen.jpg)
 
 
-# Last update: 28.06.2025 в 05:00:36 MSK
+# Last update: 28.06.2025 в 17:50:27 MSK
 
 # Repos:
 
@@ -117,6 +117,8 @@ Semester: 6
 
 [Основы научно-исследовательской деятельности 6 семестр](https://github.com/vafeenLabs/fundamentals-of-scientific-research-activities_6-semester)
 
+[Проектирование информационных систем 6 семестр](https://github.com/vafeenLabs/information-systems-design_6-semester)
+
 [Java 6 семестр](https://github.com/vafeenLabs/java_6-semester)
 
 [Численные методы 6 семестр](https://github.com/vafeenLabs/numerical-methods_6-semester)
@@ -178,8 +180,4 @@ others
 [Набор файлов для vscode для работы с С++ на Windows](https://github.com/vafeenLabs/vscode-for-cpp-windows)
 
 [Научно-исследовательская работа](https://github.com/vafeenLabs/VSU-scientific-activities)
-
-Semester: systems_design_6_
-
-[Проектирование информационных систем 6 семестр](https://github.com/vafeenLabs/information_systems_design_6_semester)
 
