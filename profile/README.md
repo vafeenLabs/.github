@@ -37,7 +37,7 @@
 ![](vafeen.jpg)
 
 
-# Last update: 27.06.2025 в 05:05:14 MSK
+# Last update: 28.06.2025 в 05:00:36 MSK
 
 # Repos:
 
@@ -178,4 +178,8 @@ others
 [Набор файлов для vscode для работы с С++ на Windows](https://github.com/vafeenLabs/vscode-for-cpp-windows)
 
 [Научно-исследовательская работа](https://github.com/vafeenLabs/VSU-scientific-activities)
+
+Semester: systems_design_6_
+
+[Проектирование информационных систем 6 семестр](https://github.com/vafeenLabs/information_systems_design_6_semester)
 
