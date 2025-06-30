@@ -37,7 +37,7 @@
 ![](vafeen.jpg)
 
 
-# Last update: 30.06.2025 в 05:10:13 MSK
+# Last update: 30.06.2025 в 12:10:40 MSK
 
 # Repos:
 
@@ -99,7 +99,7 @@ Semester: 6
 
 [Компьютерная графика 6 семестр: 2d Самолет с текстурами](https://github.com/vafeenLabs/computer-graphics-plane_6-semester)
 
-[Компьютерная грфаика 6 семестр: улитка 3d](https://github.com/vafeenLabs/computer-graphics-snail_6-semester)
+[Компьютерная графика 6 семестр: улитка 3d](https://github.com/vafeenLabs/computer-graphics-snail_6-semester)
 
 [Компьютерная графика 6 семестр: источник света](https://github.com/vafeenLabs/computer-graphics-spotlight_6-semester)
 
@@ -114,6 +114,8 @@ Semester: 6
 [Курсовая работа 6 семестр](https://github.com/vafeenLabs/Coursework_6-semester)
 
 [Демонстрация курсовой работы 6 семестр](https://github.com/vafeenLabs/demo-coursework_6-semester)
+
+[Программирование встроенных систем 6 семестр](https://github.com/vafeenLabs/embedded-System-programming_6-semester)
 
 [Основы научно-исследовательской деятельности 6 семестр](https://github.com/vafeenLabs/fundamentals-of-scientific-research-activities_6-semester)
 
