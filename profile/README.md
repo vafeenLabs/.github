@@ -37,7 +37,7 @@
 ![](vafeen.jpg)
 
 
-# Last update: 16.07.2025 в 13:00:30 MSK
+# Last update: 17.07.2025 в 05:11:16 MSK
 
 # Repos:
 
@@ -65,7 +65,7 @@ Semester: 4
 
 [Reading log по Английскому 4 семестр](https://github.com/vafeenLabs/english-reading-log_4-semester)
 
-[Практические задания и проект со стажировки SURF 2024](https://github.com/vafeenLabs/internship-2-course-surf_4-semester)
+[Практические задания, проект и отчёт со стажировки SURF 2024](https://github.com/vafeenLabs/internship-surf_4-semester)
 
 [Операционные системы 4 семестр](https://github.com/vafeenLabs/OS_4-semester)
 
