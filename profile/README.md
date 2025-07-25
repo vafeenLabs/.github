@@ -37,7 +37,7 @@
 ![](vafeen.jpg)
 
 
-# Last update: 25.07.2025 в 23:09:50 MSK
+# Last update: 25.07.2025 в 23:11:52 MSK
 
 # Repos:
 
@@ -129,7 +129,7 @@ Semester: 6
 
 [Объектно-ориентированный анализ и проектирование 6 семестр](https://github.com/vafeenLabs/object-oriented-analysis-and-design_6-semester)
 
-[Отчет по летней практике SURF 6 семестр](https://github.com/vafeenLabs/summer-practice-surf_6-semester)
+[Отчет по летней практике 6 семестр](https://github.com/vafeenLabs/summer-practice-surf_6-semester)
 
 Semester: 1mag
 
